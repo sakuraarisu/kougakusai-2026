@@ -1,0 +1,256 @@
+/* ナビゲーション・メニュー */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-item>a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.menu-item>a:hover {
+    color: #ff6b6b;
+}
+
+.dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 5px 0;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    white-space: nowrap;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown li a:hover {
+    background-color: #fff0f0;
+    color: #ff6b6b;
+}
+
+.menu-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* カードレイアウト */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+/* お知らせ欄 */
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px dashed #eee;
+    text-align: left;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-date {
+    font-size: 0.9rem;
+    color: #888;
+    min-width: 110px;
+}
+
+.news-title {
+    flex: 1;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.more-btn {
+    background-color: transparent;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.more-btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* スマートフォン・タブレット用スタイル */
+@media screen and (max-width: 768px) {
+
+    /* ナビゲーションメニューのレスポンシブ化 */
+    .nav-menu {
+        flex-direction: column;
+        /* 縦並びに変更 */
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menu-item {
+        margin-left: 0;
+        /* 左マージンをリセット */
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+
+    .menu-item>a {
+        padding: 12px 20px;
+        font-size: 1rem;
+        background-color: #fafafa;
+    }
+
+    /* ドロップダウンメニューを常に展開（アコーディオン風に縦に並べる） */
+    .dropdown {
+        position: static;
+        /* 絶対配置を解除して通常フローに */
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+        min-width: 100%;
+        background-color: #fff;
+    }
+
+    .dropdown li a {
+        text-align: left;
+        /* 左寄せに変更 */
+        padding: 12px 35px;
+        /* インデントを下げて見やすく */
+        font-size: 0.9rem;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    /* 3. カードレイアウトの調整 */
+    .card-container {
+        gap: 15px;
+    }
+
+    .card {
+        flex: none;
+        width: 100%;
+        /* 1カラム（1枚ずつ縦並び）に変更 */
+        padding: 20px;
+    }
+
+    /* 4. お知らせ欄の調整 */
+    .news-container {
+        padding: 15px 20px;
+        /* 余白を少しタイトに */
+    }
+
+    .news-item {
+        flex-direction: column;
+        /* 日付とタイトルを縦並びに */
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+
+    .news-date {
+        min-width: auto;
+        margin-bottom: 5px;
+        /* タイトルとの間に少し隙間を作る */
+        font-size: 0.85rem;
+    }
+
+    .news-title {
+        width: 100%;
+        font-size: 0.9rem;
+        white-space: normal;
+        /* 折り返しを許可してスマホでもタイトルが読めるように */
+        text-overflow: clip;
+        /* 三点リーダー（...）を解除 */
+    }
+}

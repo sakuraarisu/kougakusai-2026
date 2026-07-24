@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* お問い合わせページスタイル */
+
+/* 全体レイアウト */
+.contact-main {
+    padding: 100px 20px 60px;
+    min-height: 80vh;
+    background-color: #f9f9f9;
+}
+
+/* 白いボックスコンテナ */
+.contact-container {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 40px 50px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-lead {
+    line-height: 1.8;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #555;
+}
+
+/* セクションと各ブロック */
+.contact-section {
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    scroll-margin-top: 80px;
+    /* メニューから飛んだときに上部が被らないように固定 */
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
+
+.contact-block {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.contact-sub-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-text {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* 灰色のメールアドレスボックス（重要） */
+.email-box {
+    font-size: 1.1rem;
+    background-color: #f5f5f5;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-family: monospace;
+}
+
+.contact-email {
+    font-weight: bold;
+    word-break: break-all;
+    /* 長いアドレスが突き抜けるのを防ぐ */
+}
+
+.email-note {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 下部のホームへ戻るボタン */
+.back-home-area {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.back-home-btn {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+.back-home-btn:hover {
+    color: #ff6b6b;
+}
+
+
+/* スマートフォン・タブレット */
+@media screen and (max-width: 768px) {
+    .contact-main {
+        padding: 80px 10px 40px;
+        /* 上下の被り対策と左右の余白を少し詰める */
+    }
+
+    /* 白いボックスコンテナのスマホ用内側余白調整 */
+    .news-container.contact-container {
+        padding: 30px 15px;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .contact-lead {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+        text-align: left;
+        /* スマホでは左寄せのほうが見やすい */
+    }
+
+    .contact-section {
+        margin-bottom: 40px;
+    }
+
+    .contact-section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    /* 灰色のメールアドレスボックスをスマホに最適化 */
+    .email-box {
+        font-size: 0.85rem;
+        /* ★アドレスが収まるように文字サイズをガッツリ小さく */
+        padding: 12px 12px;
+        /* ボックスの内側余白を少しスリムに */
+        line-height: 1.5;
+    }
+
+    .email-note {
+        font-size: 0.75rem;
+        display: block;
+        /* 注意書きを改行させてさらに見やすく */
+        margin-top: 4px;
+    }
+}

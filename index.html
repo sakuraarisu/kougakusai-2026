@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="image/logo.svg">
+    <title>2026年 こうがく祭 | 茨城大学日立キャンパス</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="js/script.js??cache=${new Date().getTime()}"></script>
+    <script src="js/menu.js??cache=${new Date().getTime()}"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <span>2026年 こうがく祭</span>
+            </div>
+
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="image/logo.svg" alt="こうがく祭 ロゴ">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="header-right">
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <a>こうがく祭について</a>
+                        <ul class="dropdown">
+                            <li><a href="greeting/greeting_dean.html">学部長挨拶</a></li>
+                            <li><a href="greeting/greeting_chair.html">委員長挨拶</a></li>
+                            <li><a href="sponsors.html">協賛企業一覧</a></li>
+                            <li><a href="#news">お知らせ</a></li>
+                            <li><a href="#access">アクセス</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a>企画情報</a>
+                        <ul class="dropdown">
+                            <li><a href="events/outdoor.html">屋外企画</a></li>
+                            <li><a href="events/indoor.html">屋内企画</a></li>
+                            <li><a href="events/laboratories.html">研究室</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="contact.html">お問い合わせ</a>
+                        <ul class="dropdown">
+                            <li><a href="contact.html#exhibitor">出展者向け</a></li>
+                            <li><a href="contact.html#sponsors">協賛について</a></li>
+                            <li><a href="contact.html#others">その他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>2026年 こうがく祭</h1>
+            <p>日程：2026年11月7日(土)</p>
+            <p>会場：茨城大学日立キャンパス</p>
+        </div>
+    </section>
+
+    <main>
+        <section id="news" class="content-section" style="scroll-margin-top: 80px;">
+            <h2>お知らせ</h2>
+            <div class="news-container">
+                <ul class="news-list" id="news-list-container">
+                </ul>
+                <button id="load-more-btn" class="more-btn is-hidden">もっと見る</button>
+            </div>
+        </section>
+    </main>
+
+    <section id="character" class="content-section">
+        <h2>キャラクター紹介</h2>
+        <div class="character-area">
+            <div class="character-container">
+
+                <div class="character-card">
+                    <img src="image/kougakusai.png" alt="こうがくサイ">
+                    <h3>こうがくサイ</h3>
+                    <p>チャームポイントはつぶらな瞳とかわいい手足。モノづくりに携われるように、爪が鋭くなっています</p>
+                </div>
+
+                <div class="character-card">
+                    <img src="image/kougakukun.jpg" alt="こうがく君">
+                    <h3>こうがく君</h3>
+                    <p>キャラクター2の紹介文をここに記載します。</p>
+                </div>
+
+                <div class="character-card">
+                    <img src="image/kougakusai.png" alt="キャラクター3">
+                    <h3>キャラクター名3</h3>
+                    <p>キャラクター3の紹介文をここに記載します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="access" class="content-section"
+        style="position: relative; margin-bottom: 50px; padding-bottom: 15px; text-align: center; scroll-margin-top: 80px;">
+
+        <h2 style="font-size: 2rem; color: #333; margin-bottom: 25px; padding-bottom: 10px;">アクセス</h2>
+
+        <div style="margin-bottom: 30px; line-height: 1.8; color: #444;">
+            <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 5px;">茨城大学 日立キャンパス</p>
+            <p style="font-size: 1rem; color: #666;">〒316-8511 茨城県日立市中成沢町4-12-1</p>
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.206686679247!2d140.64254480923756!3d36.57323678596733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6021805a2b2988af%3A0x1d5ffc0720e05ae9!2z6Iyo5Z-O5aSn5a2mIOaXpeeri-OCreODo-ODs-ODkeOCuQ!5e0!3m2!1sja!2sjp!4v1782354121948!5m2!1sja!2sjp"
+            width="800" height="450"
+            style="border: 0; border-radius: 12px; display: block; margin: 0 auto; max-width: 100%;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 茨城大学 こうがく祭実行委員会. All Rights Reserved.</p>
+
+            <div class="footer-links">
+                <a href="site-policy.html">サイトポリシー</a>
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://x.com/kougakufes" target="_blank" rel="noopener noreferrer" class="sns-icon-link">
+                    <img src="image/x-logo.png" alt="X公式ロゴ" class="sns-icon">
+                </a>
+
+                <a href="https://instagram.com/kougakufes" target="_blank" rel="noopener noreferrer"
+                    class="sns-icon-link">
+                    <img src="image/insta-logo.png" alt="Instagram公式ロゴ" class="sns-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

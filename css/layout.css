@@ -1,0 +1,229 @@
+/* パソコン用の基本スタイル */
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/* パソコン環境ではスマホ用の三本線ボタンとチェックボックスを隠す */
+.menu-checkbox,
+.hamburger-btn {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.header-left {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    white-space: nowrap;
+}
+
+.header-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 80px;
+}
+
+.header-logo img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* フッター全体のスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.copyright {
+    color: #ccc;
+    letter-spacing: 0.5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.footer-sns {
+    display: flex;
+    gap: 24px;
+}
+
+.sns-icon-link {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 8px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sns-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
+}
+
+.sns-icon-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.7;
+}
+
+
+/*  スマートフォン・タブレット  */
+@media screen and (max-width: 768px) {
+
+    /* --- ヘッダー（共通設定） --- */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        /* 左端にロゴ、右端に三本線ボタンを配置 */
+        position: relative;
+        padding: 10px 15px;
+    }
+
+    /* 【変更箇所①】スマホ時は「2026年 こうがく祭」のテキストを非表示にする */
+    .header-left {
+        display: none;
+    }
+
+    /* 【変更箇所②】ロゴの配置を中央から「左端（通常フロー）」に戻し、サイズを調整 */
+    .header-logo {
+        margin: 0;
+        display: block;
+        max-width: 50px;
+        /* スマホで見栄えの良いサイズ */
+    }
+
+    /* --- ハンバーガーメニューの仕組み --- */
+
+    /* 三本線ボタンを表示（justify-content: space-between により自動で右端に寄ります） */
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        z-index: 110;
+    }
+
+    .hamburger-btn span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #333;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* メニューを最初は右側の画面外に隠しておく */
+    .header-right {
+        position: fixed;
+        top: 55px;
+        right: -100%;
+        width: 80%;
+        height: calc(100vh - 55px);
+        background-color: #fff;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    /* --- タップされた時（チェックが入った時）の動き --- */
+
+    /* メニューをシュッと引っ張り出す */
+    .menu-checkbox:checked~.header-right {
+        right: 0;
+    }
+
+    /* 三本線を「×」に変形 */
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-checkbox:checked~.hamburger-btn span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    /* --- フッターの調整 --- */
+    footer {
+        padding: 30px 15px;
+    }
+
+    .footer-container {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: 0.8rem;
+        order: 3;
+    }
+
+    .footer-links {
+        order: 1;
+    }
+
+    .footer-sns {
+        order: 2;
+        gap: 30px;
+    }
+}

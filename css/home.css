@@ -1,0 +1,180 @@
+/* メインビジュアル（Hero） */
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../image/header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* 各セクションの共通スタイル */
+.content-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #ff6b6b;
+}
+
+/* サイトポリシー用（ここだけ特別に追加されていたもの） */
+.policy-sns-notice {
+    font-size: 0.85rem;
+    color: #777;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+/* Googleマップの比率維持 */
+#access iframe {
+    width: 80% !important;
+    /* 横幅を親要素いっぱいに広げる */
+    max-width: 800px;
+    /* 元々の最大横幅（800px）を超えないように制限 */
+    height: auto !important;
+    /* 高さを自動計算にする */
+    aspect-ratio: 800 / 450;
+    /* ★元の比率（16:9）を完全にキープする設定 */
+}
+
+/* キャラクター紹介 */
+.character-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.character-card {
+    flex: 1;
+    max-width: 300px;
+    min-width: 220px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.character-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.character-card p {
+    line-height: 1.7;
+}
+
+.character-area {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    /* 角を丸くしたくなければ削除 */
+}
+
+/* スマートフォン・タブレット用スタイル */
+@media screen and (max-width: 768px) {
+
+    /* 1. メインビジュアル（Hero）の調整 */
+    .hero {
+        height: 60vh;
+        /* スマホでは縦長になりすぎないよう、画面高さの60%程度に調整 */
+        min-height: 360px;
+        /* 極端に低い画面でも崩れないように最低高さを確保 */
+        padding-top: 80px;
+        /* ヘッダーとの被りを調整 */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+        /* スマホに合わせた適切な見出しサイズに縮小 */
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        /* 視認性をキープ */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        /* 日程・会場の文字サイズをスマホ用に調整 */
+        line-height: 1.5;
+    }
+
+    /* 2. 各セクションの共通スタイルの調整 */
+    .content-section {
+        margin: 40px auto;
+        /* 上下の余白を少し詰めてギュッと引き締める */
+        padding: 0 15px;
+        /* 左右の余白を少しタイトに */
+    }
+
+    .content-section h2 {
+        font-size: 1.6rem;
+        /* セクションタイトルの文字サイズを調整 */
+        margin-bottom: 20px;
+    }
+
+    /* スマホのときは少しだけ丸みを調整 */
+    #access iframe {
+        border-radius: 8px !important;
+        /* スマホ画面に合わせて角丸を少し控えめに */
+    }
+
+    .character-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .character-card {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .character-card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+}

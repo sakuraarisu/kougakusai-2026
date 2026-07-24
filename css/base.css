@@ -1,0 +1,25 @@
+/* 全体のリセットと基本設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* 独立したユーティリティ（便利）クラスもここ */
+.is-hidden {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 12px;
+        /* スマホ向けに少し文字サイズを調整 */
+    }
+}
