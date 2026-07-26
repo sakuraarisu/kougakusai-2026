@@ -53,7 +53,7 @@
     background-color: #ff6b6b;
 }
 
-/* サイトポリシー用（ここだけ特別に追加されていたもの） */
+/* サイトポリシー用*/
 .policy-sns-notice {
     font-size: 0.85rem;
     color: #777;
@@ -72,7 +72,7 @@
     height: auto !important;
     /* 高さを自動計算にする */
     aspect-ratio: 800 / 450;
-    /* ★元の比率（16:9）を完全にキープする設定 */
+    /* 元の比率（16:9）をキープ */
 }
 
 /* キャラクター紹介 */
