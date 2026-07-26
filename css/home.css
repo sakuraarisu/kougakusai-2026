@@ -116,6 +116,15 @@
     /* 角を丸くしたくなければ削除 */
 }
 
+.news-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
 /* スマートフォン・タブレット用スタイル */
 @media screen and (max-width: 768px) {
 
