@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* main要素のレイアウト */
+.greeting-main {
+    padding: 100px 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+}
+
+/* 中央の白いコンテナ枠 */
+.greeting-main .greeting-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 40px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* タイトル部分のセクション */
+.greeting-main .content-section {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+
+/* 挨拶のテキスト文 */
+.greeting-main .greeting {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.greeting-main .name {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-align: right;
+}
+
+/* ホームへ戻るボタンの親要素 */
+.greeting-main .back-home-wrap {
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* ホームへ戻るリンク */
+.greeting-main .back-home-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    font-size: 0.95rem;
+}
