@@ -134,11 +134,13 @@
 
     /* 1. メインビジュアル（Hero）の調整 */
     .hero {
-        width: 100%;
+
         height: 60vh;
+        /* スマホでは縦長になりすぎないよう、画面高さの60%程度に調整 */
         min-height: 360px;
+        /* 極端に低い画面でも崩れないように最低高さを確保 */
         padding-top: 80px;
-        box-sizing: border-box;
+        /* ヘッダーとの被りを調整 */
     }
 
     .hero-content h1 {
