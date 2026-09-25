@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* main要素のレイアウト */
+
+.sponsor-main {
+    padding: 100px 20px;
+    min-height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f9f9f9;
+}
+
+/* 中央の白いコンテナ枠 */
+
+.sponsor-main .sponsor-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 60px 40px;
+
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* 協賛企業の見出し */
+
+.sponsor-main .main-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
+    color: #333 !important;
+    text-decoration: none !important;
+
+    margin: 0 0 50px;
+    text-align: center;
+}
+
+/* 協賛企業一覧 */
+
+.sponsor-main .sponsor-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+/* 「敬称略・50音順」 */
+
+.sponsor-main .sponsor-note {
+    margin: -35px 0 40px;
+    text-align: center;
+    color: #777;
+    font-size: 0.85rem;
+}
+
+/* 各企業 */
+
+.sponsor-main .sponsor-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* URLがある企業 */
+
+.sponsor-main .sponsor-item a {
+    display: inline-block;
+    color: #333 !important;
+    text-decoration: none !important;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* hover時だけ下線 */
+
+.sponsor-main .sponsor-item a:hover {
+    color: #333 !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px;
+}
+
+/* 外部リンクマーク */
+
+.sponsor-main .external-link {
+    margin-left: 5px;
+    font-size: 0.85em;
+}
+
+/* URLがない企業 */
+
+.sponsor-main .sponsor-name {
+    color: #333 !important;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ホームへ戻る部分 */
+
+.sponsor-main .back-home-wrap {
+    padding-top: 30px;
+    margin-top: 40px;
+
+    border-top: 1px solid #eee;
+
+    text-align: center;
+}
+
+/* ホームへ戻るリンク */
+
+.sponsor-main .back-home-link {
+    color: inherit;
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.sponsor-main .back-home-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+
+    .sponsor-main {
+        padding: 70px 15px;
+    }
+
+    .sponsor-main .sponsor-container {
+        padding: 45px 20px;
+    }
+
+    .sponsor-main .main-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .sponsor-main .sponsor-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
