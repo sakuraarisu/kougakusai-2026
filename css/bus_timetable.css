@@ -1,0 +1,144 @@
+/* ===== バス時刻表の切り替えタブ ===== */
+.bus-tabs {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 24px;
+}
+
+.bus-tab {
+    flex: 1;
+    min-width: 0;
+    padding: 14px 10px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+    background: #f7f7f7;
+    color: #444;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.bus-tab span,
+.bus-tab small {
+    display: block;
+}
+
+.bus-tab small {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.bus-tab:hover {
+    background: #eee;
+}
+
+.bus-tab.active {
+    background: #fff;
+    color: #2457a7;
+    border-bottom-color: #2457a7;
+    font-weight: 600;
+}
+
+.bus-tab.active small {
+    color: #555;
+}
+
+.bus-tab:focus-visible {
+    outline: 2px solid #2457a7;
+    outline-offset: -3px;
+}
+
+/* ===== 時刻表 ===== */
+.bus-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin: 16px 0 32px;
+}
+
+.bus-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.bus-table th,
+.bus-table td {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+
+.bus-table th {
+    background: #f3f5f7;
+    color: #333;
+    font-weight: 600;
+}
+
+.bus-table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.bus-table tbody tr:hover {
+    background: #f0f5fb;
+}
+
+/* ===== 時刻と臨時便ラベル ===== */
+
+
+.bus-time {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 105px;
+    white-space: nowrap;
+}
+
+.bus-time>span:first-child {
+    display: inline-block;
+    width: 3.5em;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+
+
+.bus-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #f0f0f0;
+    color: #555;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+/* ===== スマートフォン対応 ===== */
+@media (max-width: 480px) {
+    .bus-tab {
+        padding: 12px 5px;
+        font-size: 0.85rem;
+    }
+
+    .bus-tab small {
+        font-size: 0.7rem;
+    }
+
+    .bus-table {
+        font-size: 0.9rem;
+    }
+
+    .bus-table th,
+    .bus-table td {
+        padding: 12px 6px;
+    }
+
+    .bus-badge {
+        padding: 2px 4px;
+        font-size: 0.7rem;
+    }
+}

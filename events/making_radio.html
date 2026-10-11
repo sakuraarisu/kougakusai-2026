@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../image/logo.svg">
+    <title>ラジオつくり教室 - 2026年 こうがく祭</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <span>2026年 こうがく祭</span>
+            </div>
+
+            <div class="header-logo">
+                <a href="../index.html">
+                    <img src="../image/logo.svg" alt="こうがく祭 ロゴ">
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav class="header-right">
+                <ul class="nav-menu">
+                    <li class="menu-item">
+                        <a>こうがく祭について</a>
+                        <ul class="dropdown">
+                            <li><a href="../greeting/greeting_dean.html">学部長挨拶</a></li>
+                            <li><a href="../greeting/greeting_chair.html">委員長挨拶</a></li>
+                            <li><a href="../sponsors.html">協賛企業一覧</a></li>
+                            <li><a href="../index.html#news">お知らせ</a></li>
+                            <li><a href="../index.html#access">アクセス</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a>企画情報</a>
+                        <ul class="dropdown">
+                            <li><a href="../events/outdoor.html">屋外企画</a></li>
+                            <li><a href="../events/indoor.html">屋内企画</a></li>
+                            <li><a href="../events/laboratories.html">研究室</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../contact.html">お問い合わせ</a>
+                        <ul class="dropdown">
+                            <li><a href="../contact.html#exhibitor">出展者向け</a></li>
+                            <li><a href="../contact.html#sponsors">協賛について</a></li>
+                            <li><a href="../contact.html#others">その他</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main
+        style="padding: 100px 20px; min-height: 70vh; display: flex; align-items: flex-start; justify-content: center; background-color: #f9f9f9; box-sizing: border-box;">
+
+        <!-- 中央の白いコンテナ -->
+        <div style="max-width: 800px; width: 100%; margin: 0 auto; text-align: center; padding: 40px 20px;
+            box-sizing: border-box; background: #fff; border-radius: 12px; border: 1px solid #eee;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);">
+
+            <!-- イベント内容 -->
+            <section class="content-section" id="radio-challenge"
+                style="position: relative; padding-bottom: 20px; margin-bottom: 40px; color: #444; line-height: 1.8; text-align: left;">
+
+                <!-- タイトル -->
+                <h2
+                    style="font-size: clamp(1.8rem, 5.5vw, 2.4rem); letter-spacing: 1px; color: #333; margin: 0 0 10px; text-align: center;">
+                    子供ラジオ作りチャレンジ教室
+                </h2>
+
+                <p style="font-size: 1rem; color: #666; margin: 0 0 30px; text-align: center;">
+                    はんだ付けに挑戦して、自分だけのラジオを作ってみよう！
+                </p>
+
+                <!-- イベント紹介 -->
+                <div style="border-radius: 12px; padding: 20px; margin-bottom: 30px; box-sizing: border-box;">
+                    <p style="margin: 0;">
+                        学生や先生、技術スタッフがやさしく教えてくれるので、初めてでも安心。<br>完成したラジオはおうちに持ち帰れます！
+                    </p>
+                </div>
+
+                <!-- 開催概要 -->
+                <h3
+                    style="font-size: 1.3rem; color: #333; margin: 0 0 15px; padding-bottom: 8px; border-bottom: 2px solid #ddd;">
+                    開催概要
+                </h3>
+
+                <dl style="margin: 0 0 30px;">
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">開催日時</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            11月7日（土） 13:00～16:00
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">開催場所</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            茨城大学工学部日立キャンパス E3棟 2階 201実験室
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">対象者</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            小学校４年～６年
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">定員</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            10名
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">参加費</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            500円（当日、現金で支払い）
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">申込方法</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            <a href="https://forms.office.com/r/5UGwi3QBHK" target="_blank" rel="noopener noreferrer"
+                                style="display: inline-block; color: #333; text-decoration: none; font-size: 1rem; line-height: 1.6;"
+                                onmouseover="this.style.textDecoration='underline'; this.style.textUnderlineOffset='4px';"
+                                onmouseout="this.style.textDecoration='none';">
+                                https://forms.office.com/r/5UGwi3QBHK
+                                <span style="margin-left: 5px; font-size: 0.85em;">↗</span>
+                            </a>
+                        </dd>
+                    </div>
+
+                    <div style="display: flex; flex-wrap: wrap; border-bottom: 1px solid #ddd; padding: 12px 5px;">
+                        <dt style="width: 110px; flex-shrink: 0; font-weight: bold;">問い合わせ先</dt>
+                        <dd style="margin: 0; flex: 1; min-width: 150px;">
+                            茨城大学工学部 電気電子システム工学科&nbsp;&nbsp;孫 冉<br>
+                            ran.sun.es[at]vc.ibaraki.ac.jp<br>
+                            <small style="color: #888;">（[at]を@に変えてお送りください。）</small>
+                        </dd>
+                    </div>
+
+                </dl>
+
+                <h3
+                    style="font-size: 1.3rem; color: #333; margin: 0 0 15px; padding-bottom: 8px; border-bottom: 2px solid #ddd;">
+                    注意事項
+                </h3>
+
+                <ul style="font-size: 0.9rem; padding-left: 1.5em; margin: 0 0 30px;">
+                    <li>このイベントでは、はんだ付けにチャレンジできます。学生や先生、技術スタッフがやさしく教えてくれます。</li>
+                    <li>本イベントのお申し込みはFormsでお願いします。お問い合わせの場合は電子メールでお願いします。</li>
+                    <li>先着順で受け付けます。申し込み〆切は10月23日（金）です。</li>
+                    <li>参加の可否は10月30日までに、順次、電子メールで連絡します。</li>
+                    <li>当日は、直接、会場においでください。父兄は同伴できますが、教室での付き添いは必須ではありません。</li>
+                    <li>参加費500 円は、当日、現金でお支払いいただきます。また、作ったラジオは自宅にお持ち帰りいただけます。</li>
+                    <li>本イベントはこうがく祭の一企画のため、こうがく祭の入場保険にご加入いただきます。</li>
+                </ul>
+
+                <!-- PDFへのリンク -->
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="./making_radio.pdf" target="_blank" rel="noopener noreferrer"
+                        style="display: inline-block; max-width: 100%; box-sizing: border-box; padding: 12px 24px; border: 1px solid #777; border-radius: 8px; color: #444; text-decoration: none; font-weight: bold; overflow-wrap: anywhere;">
+                        開催案内をPDFで見る ↗
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- ホームへ戻る -->
+            <div class="back-home-wrap" style="padding-top: 20px; border-top: 1px solid #eee; text-align: center;">
+
+                <a href="../index.html" class="back-home-link"
+                    style="text-decoration: none; font-weight: bold; color: inherit; font-size: 0.95rem;">
+                    ← ホームへ戻る
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 茨城大学 こうがく祭実行委員会. All Rights Reserved.</p>
+
+            <div class="footer-links">
+                <a href="../site-policy.html">サイトポリシー</a>
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://x.com/kougakufes" target="_blank" rel="noopener noreferrer" class="sns-icon-link">
+                    <img src="../image/x-logo.png" alt="X公式ロゴ" class="sns-icon">
+                </a>
+
+                <a href="https://instagram.com/kougakufes" target="_blank" rel="noopener noreferrer"
+                    class="sns-icon-link">
+                    <img src="../image/insta-logo.png" alt="Instagram公式ロゴ" class="sns-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
