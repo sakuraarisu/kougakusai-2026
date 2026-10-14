@@ -30,10 +30,18 @@
     margin-bottom: 40px;
 }
 
+/*タイトル文*/
+.greeting-main .greeting_title {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
 
 /* 挨拶のテキスト文 */
 .greeting-main .greeting {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: #555;
     margin-bottom: 40px;
