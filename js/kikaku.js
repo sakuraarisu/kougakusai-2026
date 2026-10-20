@@ -22,7 +22,9 @@ modal.querySelector(".modal-content")
 // --- JSON読み込み ---
 async function loadEvents() {
     try {
-        const response = await fetch(eventsSrc);
+        const response = await fetch(eventsSrc, {
+            cache: "no-store"
+        });
 
         if (!response.ok) {
             throw new Error(
