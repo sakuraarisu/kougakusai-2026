@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="../image/logo.svg">
-    <title>準備中 - 2026年 こうがく祭</title>
+    <title>屋外企画 - 2026年 こうがく祭</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/coming_soon.css">
+    <link rel="stylesheet" href="../css/kikaku.css">
 </head>
 
 <body>
@@ -64,21 +65,24 @@
         </div>
     </header>
 
-    <main class="coming-soon-main">
-        <div class="news-container">
-            <div class="content-section">
-                <h2 class="main-title">Coming Soon</h2>
+    <main class="events-main">
+        <div class="events-panel">
+            <h1>屋外企画紹介</h1>
+            <div id="eventsContainer" data-events-src="../json/events_outdoor.json">
             </div>
 
-            <p class="coming-soon-text">
-                ただいま、こちらのページは公開に向けて準備中です。<br>
-                今しばらくお待ちください。
-            </p>
-            <img src="../image/bow.png" alt="お辞儀" width="500" class="bow-image">
-
-            <div class="back-home-wrap">
-                <a href="../index.html" class="back-home-link">← ホームへ戻る</a>
+            <!-- モーダル -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div class="slide-container">
+                        <div class="slide-track" id="modalSlideTrack"></div>
+                    </div>
+                    <div id="modalInfoTable"></div>
+                </div>
             </div>
+
+            <script src="../js/kikaku.js"></script>
         </div>
     </main>
 
