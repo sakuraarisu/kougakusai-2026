@@ -48,7 +48,7 @@
     "title": "Coffee Lab",
     "place": "E1棟 西",
     "time": "10:00～16:00",
-    "image": "../image/outdoor/denatu.png",
+    "image": "../image/outdoor/denatu.jpeg",
     "genre": "飲食",
     "organization": "高電圧パルスパワー研究室",
     "intro": "コーヒーやカフェラテ、抹茶ラテ、アイスティーなどのドリンクと、お菓子を販売します。\\n休憩のお供やちょっとしたひとときに、ぜひお気軽にお立ち寄りください！"
@@ -66,7 +66,7 @@
     "title": "KRASIVA",
     "place": "E1棟 東",
     "time": "10:00～16:00",
-    "image": "../image/outdoor/smi.png",
+    "image": "../image/outdoor/smi.jpeg",
     "genre": "飲食",
     "organization": "国際交流サークル　Smiる",
     "intro": "ヨーグルトやバラの国として知られるブルガリア\\n実は、日本人にも絶対におすすめしたい美味しくて魅力的な料理がたくさんあることをご存じですか？\\n焼きたてサクサクのチーズパイ「バニッツァ」や、\\n爽やかな塩味ヨーグルトドリンク「アイリャン」。\\nまだ日本ではあまり知られていないブルガリア料理の美味しさをぜひこの機会にお試しください！"
@@ -93,7 +93,7 @@
     "title": "あげパン屋さん",
     "place": "E1棟 東",
     "time": "10:00～16:00",
-    "image": "../image/outdoor/INDOOR.png",
+    "image": "../image/outdoor/INDOOR.jpg",
     "genre": "飲食",
     "organization": "ＩＮＤＯＯＲサークル",
     "intro": "揚げたての揚げパンを販売します。ぜひお気軽にお立ち寄りください。"
@@ -111,7 +111,7 @@
     "title": "焼うどん田中",
     "place": "E1棟 東",
     "time": "10:00～16:00",
-    "image": "../image/outdoor/yaki.png",
+    "image": "../image/outdoor/yaki.jpeg",
     "genre": "飲食",
     "organization": "エコエナジー研究室",
     "intro": "焼うどんを販売します。ぜひお気軽にお立ち寄りください。"
@@ -120,7 +120,7 @@
     "title": "古本市 ～本でつなぐ教育支援～",
     "place": "E1棟 東",
     "time": "10:00～16:00",
-    "image": "../image/outdoor/kosyo.png",
+    "image": "../image/outdoor/kosyo.jpeg",
     "genre": "体験",
     "organization": "STUDY FOR TWO",
     "intro": "大学受験用の参考書や古本を販売します。\\n売上による利益の8割を途上国の教育支援プログラムに寄付し、本を通じて教育の機会を広げる活動につなげます。ぜひお立ち寄りください。"
@@ -156,9 +156,18 @@
   {
     "title": "福島清香 スペシャルライブ",
     "place": "E1棟 西ステージ(雨天：体育館)",
+    "time": "13:30～",
     "image": "../image/outdoor/fukushimaseika.png",
     "genre": "ステージ",
     "link": "https://kougakusai.eng.ibaraki.ac.jp/events/fukushimaseika.html",
     "intro": "シンガーソングライター・福島清香さんによるステージライブを開催します！ 歌声と音楽が織りなす特別なひとときを、ぜひ会場でお楽しみください。"
+  },
+  {
+    "title": "ビンゴ大会",
+    "place": "E1棟 西ステージ(雨天：体育館)",
+    "time": "15:00～",
+    "image": "../image/outdoor/bingo.png",
+    "genre": "ステージ",
+    "organization": "こうがく祭実行委員"
   }
 ]
