@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="../image/logo.svg">
-    <title>準備中 - 2026年 こうがく祭</title>
+    <title>研究室公開 - 2026年 こうがく祭</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/components.css">
     <link rel="stylesheet" href="../css/coming_soon.css">
+    <link rel="stylesheet" href="../css/laboratories.css">
 </head>
 
 <body>
@@ -64,20 +65,53 @@
         </div>
     </header>
 
-    <main class="coming-soon-main">
-        <div class="news-container">
-            <div class="content-section">
-                <h2 class="main-title">Coming Soon</h2>
+    <main class="events-main">
+        <div class="events-panel">
+            <h1>研究室公開</h1>
+
+            <!-- ジャンル絞り込みボタン -->
+            <div id="genreFilters" class="genre-filters">
+                <button type="button" class="genre-filter active" data-genre="all">
+                    すべて
+                </button>
+                <button type="button" class="genre-filter" data-genre="機械システム工学科">
+                    機械システム工学科
+                </button>
+                <button type="button" class="genre-filter" data-genre="情報工学科">
+                    情報工学科
+                </button>
+                <button type="button" class="genre-filter" data-genre="電気電子システム工学科">
+                    電気電子システム工学科
+                </button>
+                <button type="button" class="genre-filter" data-genre="都市システム工学科">
+                    都市システム工学科
+                </button>
+                <button type="button" class="genre-filter" data-genre="物質科学工学科">
+                    物質科学工学科
+                </button>
             </div>
 
-            <p class="coming-soon-text">
-                ただいま、こちらのページは公開に向けて準備中です。<br>
-                今しばらくお待ちください。
-            </p>
-            <img src="../image/bow.png" alt="お辞儀" width="500" class="bow-image">
+            <div id="eventsContainer" data-events-src="../json/events_laboratories.json">
+            </div>
 
-            <div class="back-home-wrap">
-                <a href="../index.html" class="back-home-link">← ホームへ戻る</a>
+            <!-- モーダル -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close">&times;</span>
+                    <div class="slide-container">
+                        <div class="slide-track" id="modalSlideTrack"></div>
+                    </div>
+                    <div id="modalInfoTable"></div>
+                </div>
+            </div>
+
+            <script src="../js/laboratories.js"></script>
+            <div class="back-home-wrap"
+                style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee; text-align: center;">
+                <a href="../index.html" class="back-home-link"
+                    style="text-decoration: none; font-weight: bold; color: inherit; font-size: 1rem;">
+                    ← ホームへ戻る
+                </a>
             </div>
         </div>
     </main>
