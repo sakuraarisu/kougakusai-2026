@@ -21,6 +21,7 @@
   },
   {
     "title": "作って飛ばそう！ＰＰトンボ　",
+    "place": "E1棟 KINYOクリエイティブルーム",
     "image": "../image/indoor/civic.png",
     "genre": "体験",
     "organization": "日立シビックセンター科学館",
@@ -111,6 +112,7 @@
   },
   {
     "title": "宇宙工学研究会",
+    "place": "E1棟 23番教室",
     "time": "10:00～16:00",
     "image": "../image/indoor/utyu.png",
     "genre": "体験",
@@ -119,6 +121,7 @@
   },
   {
     "title": "工学同好会",
+    "place": "E1棟 21番教室",
     "time": "10:00～16:00",
     "image": "../image/indoor/kogaku.png",
     "genre": "体験",
@@ -136,6 +139,7 @@
   },
   {
     "title": "茨城大学写真部",
+    "place": "E1棟 22番教室",
     "time": "10:00～16:00",
     "image": "../image/indoor/sya.png",
     "genre": "体験",
@@ -144,6 +148,7 @@
   },
   {
     "title": "茨城大学棋道会",
+    "place": "E1棟 33番教室",
     "time": "10:00～16:00",
     "image": "../image/indoor/syogi.png",
     "genre": "体験",
@@ -152,6 +157,7 @@
   },
   {
     "title": "落語研究会の寄席",
+    "place": "E1棟 24番教室",
     "time": "13:30～16:00",
     "image": "../image/indoor/raku.png",
     "genre": "体験",

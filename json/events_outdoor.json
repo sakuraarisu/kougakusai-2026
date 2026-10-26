@@ -1,7 +1,7 @@
 [
   {
     "title": "日野自動車のものづくり",
-    "place": "E1棟前",
+    "place": "E1棟 北",
     "image": "../image/outdoor/hino.jpg",
     "genre": "体験",
     "organization": "日野自動車株式会社",
@@ -10,6 +10,7 @@
   },
   {
     "title": "自衛隊一般広報",
+    "place": "E1棟 東",
     "image": "../image/outdoor/ziei.jpg",
     "genre": "体験",
     "organization": "茨城地方協力本部 日立出張所",
@@ -17,6 +18,7 @@
   },
   {
     "title": "作業製品販売・ワークショップ",
+    "place": "生協 北",
     "time": "10:00～15:00",
     "image": "../image/outdoor/shien.jpg",
     "genre": "体験",
@@ -26,6 +28,7 @@
   },
   {
     "title": "チュロス＆コーヒー",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/C.elegans.png",
     "genre": "飲食",
@@ -34,14 +37,16 @@
   },
   {
     "title": "健康フェスタ",
+    "place": "生協 西",
     "time": "10:00～16:00",
     "image": "../image/outdoor/GI.png",
     "genre": "体験",
     "organization": "茨城大学生協学生委員会",
-    "intro": "各ブースを回りながら、握力や血圧、肌の水分量、野菜摂取量などを測定し、自分の健康状態をチェックしてみませんか？ 飲酒ゴーグル体験など、楽しみながら健康について学べる企画です。\\n最後には、各測定結果をもとに健康点数を算出します。ぜひお気軽にご参加ください！"
+    "intro": "各ブースを回りながら、握力や血圧、肌の水分量などを測定し、自分の健康状態をチェックしてみませんか？ 飲酒ゴーグル体験など、楽しみながら健康について学べる企画です。\\n最後には、各測定結果をもとに健康点数を算出します。ぜひお気軽にご参加ください！"
   },
   {
     "title": "Coffee Lab",
+    "place": "E1棟 西",
     "time": "10:00～16:00",
     "image": "../image/outdoor/denatu.png",
     "genre": "飲食",
@@ -50,6 +55,7 @@
   },
   {
     "title": "航技研カフェ",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/koku.png",
     "genre": "飲食",
@@ -58,6 +64,7 @@
   },
   {
     "title": "KRASIVA",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/smi.png",
     "genre": "飲食",
@@ -66,6 +73,7 @@
   },
   {
     "title": "たこ焼き販売~多賀工業会~",
+    "place": "多賀工業会前",
     "time": "10:00～16:00",
     "image": "../image/outdoor/tako.png",
     "genre": "飲食",
@@ -74,6 +82,7 @@
   },
   {
     "title": "揚げ物ふじた",
+    "place": "E1棟 西",
     "time": "10:00～16:00",
     "image": "../image/outdoor/fuzita.jpg",
     "genre": "飲食",
@@ -82,6 +91,7 @@
   },
   {
     "title": "あげパン屋さん",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/INDOOR.png",
     "genre": "飲食",
@@ -90,6 +100,7 @@
   },
   {
     "title": "たこ焼き販売~Folk Song Club~",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/folk.png",
     "genre": "飲食",
@@ -98,6 +109,7 @@
   },
   {
     "title": "焼うどん田中",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/yaki.png",
     "genre": "飲食",
@@ -106,6 +118,7 @@
   },
   {
     "title": "古本市 ～本でつなぐ教育支援～",
+    "place": "E1棟 東",
     "time": "10:00～16:00",
     "image": "../image/outdoor/kosyo.png",
     "genre": "体験",
@@ -114,7 +127,7 @@
   },
   {
     "title": "チアリーディングサークルCherry’s",
-    "place": "E1棟北ステージ(雨天：体育館)",
+    "place": "E1棟 西ステージ(雨天：体育館)",
     "time": "12:00～13:00",
     "image": "../image/outdoor/cherry's.jpg",
     "genre": "ステージ",
@@ -124,7 +137,7 @@
   },
   {
     "title": "茨城大学吹奏楽団コンサート",
-    "place": "E1棟北ステージ(雨天：体育館)",
+    "place": "E1棟 西ステージ(雨天：体育館)",
     "time": "13:00～13:20",
     "image": "../image/outdoor/suiso.png",
     "genre": "ステージ",
@@ -133,6 +146,7 @@
   },
   {
     "title": "チュロスラボ",
+    "place": "E1棟 西",
     "time": "10:00～16:00",
     "image": "../image/outdoor/iin.png",
     "genre": "飲食",
@@ -141,7 +155,7 @@
   },
   {
     "title": "福島清香 スペシャルライブ",
-    "place": "E1棟北ステージ(雨天：体育館)",
+    "place": "E1棟 西ステージ(雨天：体育館)",
     "image": "../image/outdoor/fukushimaseika.png",
     "genre": "ステージ",
     "link": "https://kougakusai.eng.ibaraki.ac.jp/events/fukushimaseika.html",
