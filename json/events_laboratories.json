@@ -283,9 +283,9 @@
     "title": "通信信号処理研究室",
     "place": "E3棟 204号室",
     "time": "10:00～15:00",
-    "image": "../image/laboratories/no_image.jpg",
+    "image": "../image/laboratories/E3-204.jpeg",
     "genre": "電気電子システム工学科",
-    "intro": "次世代ワイヤレス通信の技術"
+    "intro": "スマホなどに利用される次世代ワイヤレス通信の技術に関する研究の取り組みを紹介します。"
   },
   {
     "title": "電力エネルギーシステム研究室",
@@ -430,9 +430,9 @@
     "intro": "金属が変形や熱により硬くなったり、柔らかくなったりします。\\nそれを実演し、何故そうなるか科学的視点から紹介します。"
   },
   {
-    "title": "池田輝之研究室",
+    "title": "池田研究室",
     "place": "W3棟 107室",
-    "image": "../image/laboratories/no_image.jpg",
+    "image": "../image/laboratories/W3-107.jpg",
     "genre": "物質科学工学科",
     "intro": "熱から電気をつくる材料を使って、電気をつくる体験をして頂きます。"
   },
