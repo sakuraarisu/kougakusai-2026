@@ -169,5 +169,26 @@
     "image": "../image/outdoor/bingo.png",
     "genre": "ステージ",
     "organization": "こうがく祭実行委員"
+  },
+  {
+    "title": "ほっとさんどアカデミー",
+    "place": "W2棟 東",
+    "image": "../image/outdoor/hot.JPG",
+    "genre": "キッチンカー",
+    "intro": "茨城県銘柄豚ローズポークの豚汁やカレーライス等ご用意しております。"
+  },
+  {
+    "title": "Papa Chef",
+    "place": "W2棟 東",
+    "image": "../image/outdoor/papachef.jpg",
+    "genre": "キッチンカー",
+    "intro": "野菜もお肉もたっぷり入って、一度食べたらやみつきになる美味しさです！"
+  },
+  {
+    "title": "わんわんクレープ",
+    "place": "W2棟 東",
+    "image": "../image/outdoor/wanwan.JPG",
+    "genre": "キッチンカー",
+    "intro": "わんちゃん大好きなオーナーが作る可愛いクレープ屋さん♪お子さん連れやわんちゃん連れに大人気( ´∀｀ )b"
   }
 ]
