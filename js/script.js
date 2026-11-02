@@ -63,3 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error('データの読み込みに失敗しました:', error));
 
 });
+
+// 後援名義の使用期間
+document.addEventListener("DOMContentLoaded", function () {
+    const sponsorSection = document.getElementById("sponsor-support");
+
+    if (!sponsorSection) return;
+
+    const now = new Date();
+    const endDate = new Date("2026-11-08T00:00:00+09:00");
+
+    if (now < endDate) {
+        sponsorSection.style.display = "";
+    }
+});
