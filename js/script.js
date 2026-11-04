@@ -70,10 +70,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!sponsorSection) return;
 
-    const now = new Date();
     const endDate = new Date("2026-11-08T00:00:00+09:00");
 
-    if (now < endDate) {
-        sponsorSection.style.display = "";
+    function updateSponsorVisibility() {
+        const now = new Date();
+
+        sponsorSection.style.display =
+            now < endDate ? "" : "none";
     }
+
+    updateSponsorVisibility();
+
+    // 1秒ごとに時刻を再確認
+    setInterval(updateSponsorVisibility, 1000);
 });
