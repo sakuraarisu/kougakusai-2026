@@ -129,7 +129,6 @@
 }
 
 
-
 /* スマートフォン・タブレット用スタイル */
 @media screen and (max-width: 768px) {
 
@@ -192,4 +191,98 @@
         margin-bottom: 30px;
     }
 
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    width: 100%;
+    max-width: 550px;
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    line-height: 1.9;
+    animation: modalFadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.modal-content p {
+    margin-bottom: 18px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #777;
+}
+
+.modal-link {
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color: #2875b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modal-link:hover {
+    text-decoration: underline;
+}
+
+.modal-ok {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 30px 22px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
 }
